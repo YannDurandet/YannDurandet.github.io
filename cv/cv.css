@@ -1,0 +1,56 @@
+p,
+h1,
+h2,
+li,
+i {
+    color: #f1f1f1;
+    font-weight: 600;
+}
+
+#CV {
+    display: flex;
+    flex-direction: row;
+    padding-top: 70px;
+}
+
+#Left {
+    max-width: 25%;
+    background-color: #5D89F1;
+}
+
+#Logo,
+.cvAboutTitle,
+.cvAboutText,
+i {
+    margin: 10px 20px;
+}
+
+.fa-solid {
+    margin-right: 20px;
+}
+
+/* ========================================================= */
+#Main {
+    max-width: 50%;
+    background-color: #242424;
+}
+
+.cvSectionTitle {
+    display: flex;
+    flex-direction: row;
+}
+
+.cvSectionContentText,
+.cvSectionTitleText {
+    color: #f1f1f1;
+}
+
+.cvSectionTitleFile {
+    margin-right: -300px;
+}
+
+/* ========================================================= */
+#Right {
+    max-width: 25%;
+    background-color: #EF652A;
+}
