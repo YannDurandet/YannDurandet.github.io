@@ -1,107 +1,47 @@
-/* =============== Work Toggle =============== */
-
-let logoToggle = false;
-function toggleLogos() {
-  logoToggle = !logoToggle;
+function toggleWorkItems(toggleState) {
   const items = document.querySelectorAll(".workItem");
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
-    console.log("logoToggle : ", logoToggle)
-    if (logoToggle && item.classList.contains("logoItem")) {
+    if (toggleState === "all" || item.classList.contains(toggleState)) {
       item.style.display = "flex";
     } else {
       item.style.display = "none";
     }
   }
-  document.body.classList.toggle("logoToggle");
-  document.getElementById("showAllButton").style.display = logoToggle ? "flex" : "none";
-  document.getElementById("LogoButton").style.display = "none";
-  document.getElementById("webDesignButton").style.display = "none";
-  document.getElementById("illustrationButton").style.display = "none";
-  document.getElementById("devButton").style.display = "none";
-}
-
-let designToggle = false;
-function toggleDesigns() {
-  designToggle = !designToggle;
-  const items = document.querySelectorAll(".workItem");
-  for (let i = 0; i < items.length; i++) {
-    const item = items[i];
-    console.log("designToggle : ", designToggle)
-    if (designToggle && item.classList.contains("webDesignItem")) {
-      item.style.display = "flex";
-    } else {
-      item.style.display = "none";
-    }
+  document.body.classList.toggle(`${toggleState}Toggle`);
+  document.getElementById("showAllButton").style.display = toggleState === "all" ? "none" : "flex";
+  
+  const hiddenButtons = ["LogoButton", "webDesignButton", "illustrationButton", "devButton"];
+  for (let i = 0; i < hiddenButtons.length; i++) {
+    const buttonId = hiddenButtons[i];
+    document.getElementById(buttonId).style.display = toggleState === "all" ? "flex" : "none";
   }
-  document.body.classList.toggle("designToggle");
-  document.getElementById("showAllButton").style.display = designToggle ? "flex" : "none";
-  document.getElementById("LogoButton").style.display = "none";
-  document.getElementById("webDesignButton").style.display = "none";
-  document.getElementById("illustrationButton").style.display = "none";
-  document.getElementById("devButton").style.display = "none";
-}
-
-let illustrationToggle = false;
-function toggleIllustrations() {
-  illustrationToggle = !illustrationToggle;
-  const items = document.querySelectorAll(".workItem");
-  for (let i = 0; i < items.length; i++) {
-    const item = items[i];
-    if (illustrationToggle && item.classList.contains("illustrationItem")) {
-      item.style.display = "flex";
-    } else {
-      item.style.display = "none";
-    }
-  }
-  document.body.classList.toggle("illustrationToggle");
-  document.getElementById("showAllButton").style.display = illustrationToggle ? "flex" : "none";
-  document.getElementById("LogoButton").style.display = "none";
-  document.getElementById("webDesignButton").style.display = "none";
-  document.getElementById("illustrationButton").style.display = "none";
-  document.getElementById("devButton").style.display = "none";
-}
-
-let devToggle = false;
-function toggleDev() {
-  devToggle = !devToggle;
-  const items = document.querySelectorAll(".workItem");
-  for (let i = 0; i < items.length; i++) {
-    const item = items[i];
-    if (devToggle && item.classList.contains("webDevItem")) {
-      item.style.display = "flex";
-    } else {
-      item.style.display = "none";
-    }
-  }
-  document.body.classList.toggle("devToggle");
-  document.getElementById("showAllButton").style.display = devToggle ? "flex" : "none";
-  document.getElementById("LogoButton").style.display = "none";
-  document.getElementById("webDesignButton").style.display = "none";
-  document.getElementById("illustrationButton").style.display = "none";
-  document.getElementById("devButton").style.display = "none";
 }
 
 function showAll() {
-  const items = document.querySelectorAll(".workItem");
-  for (let i = 0; i < items.length; i++) {
-    const item = items[i];
-    item.style.display = "flex";
-  }
-  document.body.classList.remove("logoToggle");
-  document.body.classList.remove("designToggle");
-  document.body.classList.remove("illustrationToggle");
-
-  logoToggle = false;
-  designToggle = false;
-  illustrationToggle = false;
-  devToggle = false;
-  document.getElementById("showAllButton").style.display = "none";
-  document.getElementById("LogoButton").style.display = "flex";
-  document.getElementById("webDesignButton").style.display = "flex";
-  document.getElementById("illustrationButton").style.display = "flex";
-  document.getElementById("devButton").style.display = "flex";
+  toggleWorkItems("all");
 }
+
+function toggleLogos() {
+  const logoToggle = !document.body.classList.contains("logoToggle");
+  toggleWorkItems(logoToggle ? "logoItem" : "all");
+}
+
+function toggleDesigns() {
+  const designToggle = !document.body.classList.contains("designToggle");
+  toggleWorkItems(designToggle ? "webDesignItem" : "all");
+}
+
+function toggleIllustrations() {
+  const illustrationToggle = !document.body.classList.contains("illustrationToggle");
+  toggleWorkItems(illustrationToggle ? "illustrationItem" : "all");
+}
+
+function toggleDev() {
+  const devToggle = !document.body.classList.contains("devToggle");
+  toggleWorkItems(devToggle ? "webDevItem" : "all");
+}
+
 
 /* =============== GRID DETAILS =============== */
 let detailToggle = false;
@@ -160,7 +100,3 @@ function toggleContrast() {
     var buttons = document.getElementsByClassName("button");
   }
 }
-
-/* =============== Buttons =============== */
-
-document.querySelectorAll('.button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');

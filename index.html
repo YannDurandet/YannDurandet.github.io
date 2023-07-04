@@ -37,9 +37,13 @@
                 <a href="https://www.linkedin.com/in/yann-durandet-web-designer/"><i
                         class="fa-brands fa-linkedin-in navSocialIcon"></i></a>
                 <a href="https://github.com/YannDurandet"><i class="fa-brands fa-github navSocialIcon"></i></a>
+                <a onclick="toggleContrast()" class="noDisplayNight"><i
+                        class="fa-regular fa-sun navSocialIcon wideIconFix"></i></a>
+                <a onclick="toggleContrast()" class="noDisplayDay"><i
+                        class="fa-regular fa-moon navSocialIcon thinIconFix"></i></a>
             </div>
             <div class="navbarFooter">
-                <p>Copyright © 2023 <br>Yann Durandet.</p>
+                <p class="navbarFooterText">Copyright &copy; 2023 <br>Yann Durandet.</p>
             </div>
         </nav>
     </div>
@@ -51,11 +55,15 @@
                         <h1 class="heroTitle"><span class="kenobi">Hello there !</span><br> Je suis <span
                                 class="colorfulGradient">Yann</span>.</h1>
                         <p class="heroDesc">
-                            J'ai 20 ans, étudiant à la <br><span class="colorfulGradient"><b> Normandie Web School</b></span>.
+                            J'ai 20 ans, étudiant à la <br><span class="colorfulGradient"><b> Normandie Web
+                                    School</b></span>.
                             <br>
                         </p>
                     </div>
-                    <img id="illustration" src="assets/svg/heroIllustration.svg" alt="Illustration Abstraite">
+                    <img id="illustration" class="noDisplayDay" src="assets/svg/heroIllustration.svg"
+                        alt="Illustration Abstraite" />
+                    <img id="illustration" class="noDisplayNight" src="assets/svg/heroIllustrationDark.svg"
+                        alt="Illustration Abstraite" />
                 </div>
             </header>
         </section>
@@ -74,7 +82,8 @@
                             <img src="assets/icons/northEastArrowIcon.svg" alt="Arrow Icon" class="resumeArrowIcon" />
                         </a>
                     </div>
-                    <img class="aboutImg" src="assets/svg/aboutIllustration.svg" />
+                    <img class="aboutImg noDisplayDay" src="assets/svg/aboutIllustration.svg" />
+                    <img class="aboutImg noDisplayNight" src="assets/svg/aboutIllustrationDark.svg" />
                 </div>
             </div>
             <div class="aboutRightColumn">
@@ -421,7 +430,7 @@
         </footer>
     </div>
 </body>
-<script src="https://kit.fontawesome.com/3c2baa7ea7.js" crossorigin="anonymous"></script>
-<script src="index.js" defer async></script>
+<script src="https://kit.fontawesome.com/3c2baa7ea7.js"></script>
+<script src="index.js"></script>
 
 </html>

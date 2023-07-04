@@ -4,8 +4,6 @@
 }
 
 
-
-
 .cvSectionTitleText{
     padding-bottom: 12px;
     width: fit-content;
@@ -14,7 +12,7 @@
 .cvSectionContent{
     margin-bottom: 12px;
     padding: 4px 24px 4px 12px;
-    border-left: #363636 2px solid;
+    border-left: #252525 2px solid;
 }
 
 .listRow{
@@ -36,7 +34,8 @@
 }
 
 .cvAboutText{
-    padding: 12px 0 24px 12px   ;
+    padding: 12px 0 24px 12px;
+    color: white;
 }
 
 .cvSectionTitle {
@@ -59,8 +58,8 @@
 #Main{
     display: flex;
     flex-direction: row;
-    margin: 12px 0;
     background-color: #f0f0f0;
+    padding-top: 12px;
 }
 
 #Formations,
