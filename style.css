@@ -392,7 +392,6 @@ nav {
   margin: 0 auto;
   flex-direction: row;
   padding-bottom: 60px;
-
 }
 
 .menubutton {
@@ -667,5 +666,27 @@ footer {
 @media (max-width : 768px) {
   .noDisplayPhone {
     display: none;
+  }
+  #About {
+    height: fit-content;
+  }
+  #aboutContainer{
+    display: flex;
+    flex-direction:column;
+    margin: auto;
+    gap: 8vw;
+  }
+  .content{
+    margin-left: none;
+  }
+  #menuBottom {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .detailItem{
+    display: flex;
+    flex-direction: column;
   }
 }
