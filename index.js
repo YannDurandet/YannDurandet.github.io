@@ -10,7 +10,7 @@ function toggleWorkItems(toggleState) {
   }
   document.body.classList.toggle(`${toggleState}Toggle`);
   document.getElementById("showAllButton").style.display = toggleState === "all" ? "none" : "flex";
-  
+
   const hiddenButtons = ["LogoButton", "webDesignButton", "illustrationButton", "devButton"];
   for (let i = 0; i < hiddenButtons.length; i++) {
     const buttonId = hiddenButtons[i];
@@ -88,15 +88,15 @@ function showGrid() {
 
 /* =============== Dark Mode =============== */
 
-let contrastToggle = false
+let contrastToggle = false;
 
 function toggleContrast() {
   contrastToggle = !contrastToggle;
   if (contrastToggle) {
     document.body.classList.add("darkTheme");
-    var buttons = document.getElementsByClassName("button");
+    document.documentElement.style.backgroundColor = "#333333";
   } else {
     document.body.classList.remove("darkTheme");
-    var buttons = document.getElementsByClassName("button");
+    document.documentElement.style.backgroundColor = "#f0f0f0";
   }
 }

@@ -37,27 +37,25 @@ span {
 
 .click {
   cursor: pointer;
-  text-decoration: none;
 }
 
 .content {
-  margin-left: 245px;
+  margin-left: 20vw;
 }
 
-.whiteColor {
-  color: #f5f5f5;
+.colorfulGradient {
+  color: transparent;
+  background: linear-gradient(90deg, #FFB147 0%, #FF6C63 50%, #B86ADF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.blackColor {
-  color: black;
-}
-
-.goldColor {
-  color: rgba(255, 177, 71, 1);
-}
-
-.blackBG {
-  background-color: #242424;
+@supports not (-webkit-text-fill-color: transparent) {
+  .colorfulGradient {
+    background: none;
+    color: #FFB147;
+  }
 }
 
 /* =============== Nav =============== */
@@ -66,40 +64,32 @@ span {
   position: fixed;
   top: 0;
   left: 0;
-  width: 245px;
+  width: 16vw;
   height: 100%;
   background-color: #000000;
-  padding: 0 20px;
+  padding: 2vh 1vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
-.navbarImage {
-  width: 100%;
-  margin-top: 24px;
-  margin-bottom: 24px;
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6vh;
 }
 
 .navbarImage img {
   width: 100%;
-  height: auto;
 }
 
 .navbarLinks {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-}
-
-.navbarLinks li {
-  margin-bottom: 12px;
+  gap: 1vh;
 }
 
 .navbarLinks li a {
@@ -107,6 +97,11 @@ span {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
+  transition: font-weight 0s;
+}
+
+.navbarLinks li a:hover {
+  font-weight: bold;
 }
 
 .navbarSocial {
@@ -114,59 +109,64 @@ span {
   flex-direction: column;
   align-items: flex-start;
   margin-top: auto;
-  margin-bottom: 10px;
-  padding-top: 12px;
-  padding-left: 12px;
-  border-left: 2px solid rgb(81, 81, 81);
+  border-left: 2px solid #505050;
+  gap: 1.5vh;
+  padding: 12px;
 }
 
-.navSocialIcon {
-  background-color: white;
-  color: black;
+.navbarSocial a i {
+  background-color: #f0f0f0;
+  color: #252525;
   font-size: 24px;
   padding: 8.5px 9.5px;
-  border-radius: 32px;
-  margin-bottom: 12px;
+  border-radius: 64px;
 }
 
-.wideIconFix {
-  padding: 8.5px 9px;
-}
-
-.thinIconFix {
+.navbarSocial a:nth-last-child(-n+2) i {
   padding: 8.5px 12px;
 }
 
-.navbarFooter {
-  margin-top: 20px;
-  font-size: 16px;
+.navbarSocial a i:hover {
+  transform: translateX(0.5vw);
+  color: #f0f0f0;
 }
 
-.navbarFooterText {
+.fa-linkedin-in:hover {
+  background-color: #0072b1;
+}
+
+.fa-github:hover {
+  background-color: #238636;
+}
+
+.fa-instagram:hover {
+  background-color: #d62976;
+}
+
+.fa-lightbulb:hover {
+  background-color: #505050;
+}
+
+.navbarFooter p {
+  font-size: 16px;
   color: #757575;
 }
 
 /* =============== Landing Page =============== */
 
 #landingPage {
-  background-color: #f0f0f0;
   height: 100dvh;
-}
-
-header {
   display: flex;
-  flex-direction: column;
 }
 
 #hero {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin: 100px auto 0 auto;
-  width: 1200px;
+  margin: auto;
+  gap: 10vw;
 }
 
-.description {
+.heroText {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -178,73 +178,59 @@ header {
   margin-bottom: 20px;
 }
 
-.kenobi {
+.heroTitle span:first-child {
   font-weight: 400;
   font-style: italic;
   font-size: 24px;
-  color: #242424;
-}
-
-.colorfulGradient {
-  color: transparent;
-  background: linear-gradient(90deg, rgba(255, 177, 71, 1) 0%, rgba(255, 108, 99, 1) 50%, rgba(184, 106, 223, 1) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@supports not (-webkit-text-fill-color: transparent) {
-  .colorfulGradient {
-    background: none;
-    color: rgba(255, 177, 71, 1);
-  }
 }
 
 .heroDesc {
   font-size: 32px;
-  line-height: 150%;
+  line-height: 125%;
 }
 
-#illustration {
-  max-width: 500px;
+#heroIllustration {
+  max-width: 33vw;
 }
 
 /* =============== About =============== */
 
 #About {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 100%;
-  background-color: #f0f0f0;
   height: 100dvh;
-  align-items: center;
+  display: flex;
 }
 
-.aboutLeftColumn {
+#aboutContainer{
+  display: flex;
+  flex-direction:row;
+  margin: auto;
+  gap: 8vw;
+}
+
+.aboutHalfLeft {
   max-width: 40%;
-  margin: 0 auto;
 }
 
-.centeredLeft {
+.aboutWelcome {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: left;
 }
 
-.italicText {
-  font-style: italic;
-  font-size: 18px;
-}
-
-.boldText {
+.aboutWelcomeText {
   font-weight: bold;
   font-size: 32px;
   margin-bottom: 24px;
 }
 
-.centeredMiddle {
+.aboutWelcomeText span {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.aboutMe {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -263,7 +249,7 @@ header {
   margin-bottom: 16px;
 }
 
-.resumeBox {
+.linkBox {
   background-color: #000;
   padding: 14px 20px 14px 24px;
   width: fit-content;
@@ -271,42 +257,41 @@ header {
   z-index: 2;
 }
 
-.resumeLink {
+.linkBox a {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: white;
 }
 
-.resumeText {
+.linkBox span {
   font-size: 24px;
   margin-right: 8px;
   color: white;
 }
 
-.resumeArrowIcon {
+.linkBox img {
   height: 24px;
 }
 
-.resumeBox:hover {
-  background-color: #101010;
+.linkBox:hover {
+  background-color: #252525;
 }
 
-.resumeBox:hover .resumeText {
+.linkBox:hover span {
   color: rgba(255, 177, 71, 1);
 }
 
 .aboutImg {
-  max-width: 300px;
+  max-width: 19vw;
   width: 100%;
   margin-top: -22px;
   position: relative;
   z-index: 1;
 }
 
-.aboutRightColumn {
+.aboutHalfRight {
   max-width: 50%;
-  margin: 50px auto 0 auto;
 }
 
 .coordsRow {
@@ -325,13 +310,12 @@ header {
   align-items: center;
 }
 
-
-.coordsText {
-  font-weight: 600;
+.coordsItem img {
+  margin-right: 12px;
 }
 
-.coordsIcon {
-  margin-right: 12px;
+.coordsItem p {
+  font-weight: 600;
 }
 
 .infoRow {
@@ -342,9 +326,9 @@ header {
   border-bottom: 2px solid #D8D8D8;
 }
 
-.infoBox:first-child {
+.infoHolder:first-child {
   margin-left: 12px;
-  margin-right: 112px;
+  margin-right: 7vw;
 }
 
 .infoHeading {
@@ -353,7 +337,7 @@ header {
   flex-direction: row;
 }
 
-.infoH2 {
+.infoHeading h2 {
   font-size: 48px;
   margin-right: 8px;
 }
@@ -361,29 +345,30 @@ header {
 .quote {
   background-color: black;
   font-size: 20px;
-  padding: 40px;
+  padding: 32px;
   margin-top: 24px;
 }
 
-.quoteText {
+.quote img {
+  width: 64px;
+  margin-left: -12px;
+  margin-top: -64px;
+  z-index: 3;
+}
+
+.quote p {
   color: white;
   font-style: italic;
   margin-top: -24px;
   z-index: 4;
 }
 
-.quoteImg {
-  width: 64px;
-  margin-left: -12px;
-  margin-top: -96px;
-  z-index: 3;
-}
+
 
 /* =============== MENU =============== */
 
 #workMenu {
   padding-top: 40px;
-  background-color: #f0f0f0;
 }
 
 .menuTop {
@@ -423,7 +408,6 @@ header {
 /* =============== Work Grid =============== */
 
 #workGrid {
-  background-color: #f0f0f0;
   width: 100%;
 }
 
@@ -508,13 +492,13 @@ header {
 
 .waveHolder {
   margin-bottom: -50px;
-  margin-left: -10px;
+  margin-left: -5vw;
 }
 
 footer {
-  position: relative;
   display: flex;
-  padding: 0 0;
+  background-color: #242424;
+  margin-left: -5vw;
 }
 
 .footerRow {
@@ -536,14 +520,6 @@ footer {
   margin: 28px 0;
 }
 
-.footerLogoPopper {
-  color: #f5f5f5;
-  position: absolute;
-  top: 0px;
-  font-weight: 700;
-  opacity: 0;
-}
-
 .footerAnchor {
   position: relative;
 }
@@ -561,52 +537,6 @@ footer {
 .footerCopyright {
   color: rgb(140, 140, 140);
   padding-bottom: 20px;
-}
-
-/* =============== Link Hover Effect =============== */
-
-/* General */
-
-.linkHoverEffect {
-  position: relative;
-}
-
-.linkHoverEffect:after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  height: 3px;
-  width: 0;
-  right: 0;
-  transition: all 300ms ease;
-}
-
-.linkHoverEffect:hover:after {
-  left: -5%;
-  width: 110%;
-}
-
-/* Variants */
-
-.linkHoverEffectWhite:after {
-  background-color: #fff;
-}
-
-.linkHoverEffectBlack:after {
-  background-color: #242424;
-}
-
-.linkHoverEffectColor:after {
-  background-image: linear-gradient(90deg, rgba(255, 177, 71, 1) 0%, rgba(255, 108, 99, 1) 50%, rgba(184, 106, 223, 1) 100%);
-  height: 4px;
-}
-
-.linkHoverEffectColorCover:after {
-  z-index: -1;
-  background-image: linear-gradient(90deg, rgba(255, 177, 71, 1) 0%, rgba(255, 108, 99, 1) 50%, rgba(184, 106, 223, 1) 100%);
-  height: 20px;
-  bottom: 2px;
-  left: -20px;
 }
 
 /* === DARK THEME === */
@@ -639,14 +569,20 @@ footer {
   background-color: #757575;
 }
 
-.darkTheme #landingPage,
-.darkTheme #workGrid,
-.darkTheme #About,
-.darkTheme #detailledGrid,
-.darkTheme #workMenu,
-.darkTheme #Main,
-.darkTheme .waveHolder {
-  background-color: #333333;
+.darkTheme .fa-linkedin-in:hover {
+  background-color: #0072b1;
+}
+
+.darkTheme .fa-github:hover {
+  background-color: #238636;
+}
+
+.darkTheme .fa-instagram:hover {
+  background-color: #d62976;
+}
+
+.darkTheme .fa-lightbulb:hover {
+  background-color: #505050;
 }
 
 .darkTheme .detailRightColumn {
@@ -658,7 +594,6 @@ footer {
   border-bottom: 2px solid #505050;
 }
 
-
 .darkTheme p,
 .darkTheme a,
 .darkTheme li,
@@ -666,26 +601,31 @@ footer {
 .darkTheme h2,
 .darkTheme h3,
 .darkTheme h4,
-.darkTheme span {
-  color: #e7e7e7;
+.darkTheme span,
+.darkTheme .navbarLinks li a {
+  color: #bababa;
 }
 
 .darkTheme .menuButtonTop {
   filter: invert(1);
 }
 
-.darkTheme .menuButtonTop:hover {
+.darkTheme .menuButtonTop:hover,
+.darkTheme .menuButtonTop,
+.darkTheme .navbarImage img {
   opacity: 0.4;
+}
+
+.darkTheme .menuButtonTop:hover {
+  opacity: 1;
 }
 
 .darkTheme .coordsIcon {
   opacity: 0.33;
 }
 
-/* === Responsive === */
+/* === 404 Page === */
 
-
-/* === SecondPage === */
 .workInProgress {
   display: flex;
   flex-direction: column;
@@ -720,4 +660,12 @@ footer {
   max-height: 370px;
   margin-top: 10px;
   align-self: flex-start;
+}
+
+/* === Responsive === */
+
+@media (max-width : 768px) {
+  .noDisplayPhone {
+    display: none;
+  }
 }

@@ -8,13 +8,14 @@
     <title>Yann Durandet</title>
     <link rel="icon" href="assets/website-logo/InitialsIcon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="linkHoverEffect.css">
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar noDisplayPhone">
         <nav>
             <div class="navbarImage">
-                <img src="assets/website-logo/logoWhite.svg" alt="Logo" />
+                <img src="assets/website-logo/logoWhite.svg" />
             </div>
             <ul class="navbarLinks">
                 <li>
@@ -32,15 +33,13 @@
                 </li>
             </ul>
             <div class="navbarSocial">
-                <a href="https://www.instagram.com/yann_visuals"><i
-                        class="fa-brands fa-instagram navSocialIcon"></i></a>
-                <a href="https://www.linkedin.com/in/yann-durandet-web-designer/"><i
-                        class="fa-brands fa-linkedin-in navSocialIcon"></i></a>
-                <a href="https://github.com/YannDurandet"><i class="fa-brands fa-github navSocialIcon"></i></a>
-                <a onclick="toggleContrast()" class="noDisplayNight"><i
-                        class="fa-regular fa-sun navSocialIcon wideIconFix"></i></a>
-                <a onclick="toggleContrast()" class="noDisplayDay"><i
-                        class="fa-regular fa-moon navSocialIcon thinIconFix"></i></a>
+                <a href="https://www.instagram.com/yann_visuals" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/yann-durandet-web-designer/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/YannDurandet" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a onclick="toggleContrast()" class="noDisplayNight"><i class="fa-solid fa-lightbulb"></i></a>
+                <a onclick="toggleContrast()" class="noDisplayDay"><i class="fa-regular fa-lightbulb"></i></a>
             </div>
             <div class="navbarFooter">
                 <p class="navbarFooterText">Copyright &copy; 2023 <br>Yann Durandet.</p>
@@ -49,86 +48,80 @@
     </div>
     <div class="content">
         <section id="landingPage">
-            <header>
-                <div id="hero">
-                    <div class="description">
-                        <h1 class="heroTitle"><span class="kenobi">Hello there !</span><br> Je suis <span
-                                class="colorfulGradient">Yann</span>.</h1>
-                        <p class="heroDesc">
-                            J'ai 20 ans, étudiant à la <br><span class="colorfulGradient"><b> Normandie Web
-                                    School</b></span>.
-                            <br>
-                        </p>
-                    </div>
-                    <img id="illustration" class="noDisplayDay" src="assets/svg/heroIllustration.svg"
-                        alt="Illustration Abstraite" />
-                    <img id="illustration" class="noDisplayNight" src="assets/svg/heroIllustrationDark.svg"
-                        alt="Illustration Abstraite" />
+            <div id="hero">
+                <div class="heroText">
+                    <h1 class="heroTitle"><span class="kenobi">Hello there !</span><br> Je suis <span
+                            class="colorfulGradient">Yann</span>.</h1>
+                    <p class="heroDesc">
+                        J'ai 20 ans, étudiant à la <br><span class="colorfulGradient"><b>Normandie Web
+                                School</b></span>.
+                    </p>
                 </div>
-            </header>
+                <img id="heroIllustration" class="noDisplayDay noDisplayPhone" src="assets/svg/heroIllustration.svg" />
+                <img id="heroIllustration" class="noDisplayNight noDisplayPhone"
+                    src="assets/svg/heroIllustrationDark.svg" />
+            </div>
         </section>
         <section id="About">
-            <div class="aboutLeftColumn">
-                <div class="centeredLeft">
-                    <p class="italicText">Ravi de vous rencontrer !</p>
-                    <p class="boldText">BIENVENU CHEZ...</p>
-                </div>
-                <div class="centeredMiddle">
-                    <p class="aboutName colorfulGradient"><b>YANN DURANDET</b></p>
-                    <p class="aboutSubtitle"><b><i>UI Designer</i></b> basé en <b><i>Normandie</i></b></p>
-                    <div class="resumeBox click">
-                        <a href="cv.html" class="resumeLink">
-                            <span class="resumeText">Voir Mon CV</span>
-                            <img src="assets/icons/northEastArrowIcon.svg" alt="Arrow Icon" class="resumeArrowIcon" />
-                        </a>
+            <div id="aboutContainer">
+                <div class="aboutHalfLeft">
+                    <div class="aboutWelcome">
+                        <p class="aboutWelcomeText"><span>Ravi de vous rencontrer !</span><br>BIENVENUE CHEZ...</p>
                     </div>
-                    <img class="aboutImg noDisplayDay" src="assets/svg/aboutIllustration.svg" />
-                    <img class="aboutImg noDisplayNight" src="assets/svg/aboutIllustrationDark.svg" />
-                </div>
-            </div>
-            <div class="aboutRightColumn">
-                <div class="coordsRow">
-                    <div class="coordsItem">
-                        <img class="coordsIcon" src="assets/icons/phoneIcon.svg" />
-                        <p class="coordsText">+33 651 809 285</p>
-                    </div>
-                    <div class="coordsItem">
-                        <img class="coordsIcon" src="assets/icons/ageIcon.svg" />
-                        <p class="coordsText">20 ans</p>
-                    </div>
-                    <div class="coordsItem">
-                        <img class="coordsIcon" src="assets/icons/mailIcon.svg" />
-                        <p class="coordsText">durandet.yann@gmail.com</p>
-                    </div>
-                    <div class="coordsItem">
-                        <img class="coordsIcon" src="assets/icons/pinIcon.svg" />
-                        <p class="coordsText">Rouen, Normandie</p>
-                    </div>
-                </div>
-                <div class="infoRow">
-                    <div class="infoBox">
-                        <div class="infoHeading">
-                            <h2 class="infoH2 colorfulGradient">2+</h2>
-                            <h3 class="infoH3">Années<br>d'expérience</h3>
+                    <div class="aboutMe">
+                        <p class="aboutName colorfulGradient"><b>YANN DURANDET</b></p>
+                        <p class="aboutSubtitle"><b><i>UI Designer</i></b> basé en <b><i>Normandie</i></b></p>
+                        <div class="linkBox click">
+                            <a href="cv.html">
+                                <span>Voir Mon CV</span>
+                                <img src="assets/icons/northEastArrowIcon.svg"/>
+                            </a>
                         </div>
-                        <p class="infoDesc">Depuis 2 ans, je suis <br><b>Designer Web</b> et graphiste,<br> et je suis
-                            très passioné<br> par les travaux que je réalise.</p>
-                    </div>
-                    <div class="infoBox">
-                        <div class="infoHeading">
-                            <h2 class="infoH2 colorfulGradient">12</h2>
-                            <h3 class="infoH3">Projets<br>réalisés</h3>
-                        </div>
-                        <p class="infoDesc">Avec mon expérience,<br> je suis en capacité de<br> vous aider à
-                            réaliser<br> <b>vos</b> projets.</p>
+                        <img class="aboutImg noDisplayDay" src="assets/svg/aboutIllustration.svg" />
+                        <img class="aboutImg noDisplayNight" src="assets/svg/aboutIllustrationDark.svg" />
                     </div>
                 </div>
-                <div class="quote">
-                    <img src="assets/icons/quoteIcon.svg" class="quoteImg">
-                    <p class="quoteText">
-                        <b>"Do The Hard Work, Especially When You Don't Feel Like It"</b><br> - Hamza Ahmed
-                    </p>
-
+                <div class="aboutHalfRight">
+                    <div class="coordsRow">
+                        <div class="coordsItem">
+                            <img src="assets/icons/phoneIcon.svg" />
+                            <p>+33 651 809 285</p>
+                        </div>
+                        <div class="coordsItem">
+                            <img src="assets/icons/ageIcon.svg" />
+                            <p>20 ans</p>
+                        </div>
+                        <div class="coordsItem">
+                            <img src="assets/icons/mailIcon.svg" />
+                            <p>durandet.yann@gmail.com</p>
+                        </div>
+                        <div class="coordsItem">
+                            <img src="assets/icons/pinIcon.svg" />
+                            <p>Rouen, Normandie</p>
+                        </div>
+                    </div>
+                    <div class="infoRow">
+                        <div class="infoHolder">
+                            <div class="infoHeading">
+                                <h2 class="colorfulGradient">2+</h2>
+                                <h3>Années<br>d'expérience</h3>
+                            </div>
+                            <p>Depuis 2 ans, je suis <br><b>Designer Web</b> et graphiste,<br> et je suis
+                                très passioné<br> par les travaux que je réalise.</p>
+                        </div>
+                        <div class="infoBox">
+                            <div class="infoHeading">
+                                <h2 class="colorfulGradient">12</h2>
+                                <h3>Projets<br>réalisés</h3>
+                            </div>
+                            <p>Avec mon expérience,<br> je suis en capacité de<br> vous aider à
+                                réaliser<br> <b>vos</b> projets.</p>
+                        </div>
+                    </div>
+                    <div class="quote">
+                        <img src="assets/icons/quoteIcon.svg" class="quoteImg">
+                        <p><b>"Do The Hard Work, Especially When You Don't Feel Like It"</b><br> - Hamza Ahmed</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -402,17 +395,13 @@
         <div class="waveHolder">
             <img src="assets/svg/wave.svg" alt="" />
         </div>
-        <footer class="blackBG">
+        <footer>
             <div class="container">
                 <div class="footerRow">
                     <a href="#" class="footerAnchor">
                         <figure class="footerLogo">
                             <img src="assets/website-logo/logoWhite.svg" class="footerLogoImg" alt="LOGO YD">
                         </figure>
-                        <span class="footerLogoPopper">
-                            Top
-                            <i class="fas fa-arrow-up"></i>
-                        </span>
                     </a>
                     <div class="footerSocialList">
                         <a href="https://instagram.com/yann.drndt" target="_blank"
@@ -420,9 +409,9 @@
                         <a href="https://github.com/YannDurandet" target="_blank" class="footerSocialLink">GitHub</a>
                         <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank"
                             class="footerSocialLink">LinkedIn</a>
-                        <a href="assets/CV_YANN_DURANDET.pdf" target="_blank" class="footerSocialLink">CV</a>
+                        <a href="cv.html" target="_blank" class="footerSocialLink">CV</a>
                     </div>
-                    <div class="footerCopyright">
+                    <div class="footerCopyright" onclick="toggleGoofy()">
                         Copyright &copy; 2023 Yann Durandet
                     </div>
                 </div>
