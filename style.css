@@ -152,6 +152,33 @@ nav {
   color: #757575;
 }
 
+.navbarSocialMobile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: auto;
+  border-left: 2px solid #505050;
+  gap: 1.5vh;
+  padding: 12px;
+}
+
+.navbarSocialMobile a i {
+  background-color: #252525;
+  color: #f0f0f0;
+  font-size: 24px;
+  padding: 8.5px 9.5px;
+  border-radius: 64px;
+}
+
+.navbarSocialMobile a:nth-last-child(-n+2) i {
+  padding: 8.5px 12px;
+}
+
+.navbarSocialMobile a i:hover {
+  transform: translateY(0.5vw);
+  color: #f0f0f0;
+}
+
 /* =============== Landing Page =============== */
 
 #landingPage {
@@ -663,12 +690,22 @@ footer {
 
 /* === Responsive === */
 
+@media (min-width : 769px) {
+  .navbarSocialMobile{
+    display: none;
+  }
+}
+
 @media (max-width : 768px) {
   .noDisplayPhone {
     display: none;
   }
+  #landingPage{
+    height: fit-content;
+  }
   #About {
     height: fit-content;
+    align-items: center;
   }
   #aboutContainer{
     display: flex;
@@ -677,7 +714,7 @@ footer {
     gap: 8vw;
   }
   .content{
-    margin-left: none;
+    margin-left: 0vw;
   }
   #menuBottom {
     width: 300px;
@@ -688,5 +725,34 @@ footer {
   .detailItem{
     display: flex;
     flex-direction: column;
+  }
+  .coordsRow{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12vw;
+  }
+  .infoRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .infoHolder:first-child {
+    margin-left: 0;
+  }
+  .aboutHalfLeft{
+    max-width: 100%;
+  }
+  .aboutHalfRight {
+    max-width: 100%;
+  }
+  .aboutImg {
+    max-width: 45vw;
+  }
+  #hero {
+    display: flex;
+    flex-direction: column;
+  }
+  #heroIllustration {
+    max-width: 50vw;
   }
 }
