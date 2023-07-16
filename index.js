@@ -42,50 +42,6 @@ function toggleDev() {
   toggleWorkItems(devToggle ? "webDevItem" : "all");
 }
 
-
-/* =============== GRID DETAILS =============== */
-let detailToggle = false;
-
-function showDetails() {
-  const menuBottom = document.getElementById("menuBottom");
-  const workGrid = document.getElementById("workGrid");
-  const detailledGrid = document.getElementById("detailledGrid");
-
-  detailledGrid.style.transition = "opacity 500ms";
-  workGrid.style.transition = "opacity 500ms";
-
-  workGrid.style.opacity = "0";
-  setTimeout(function () {
-    workGrid.style.display = "none";
-    detailledGrid.style.display = "block";
-    setTimeout(function () {
-      detailledGrid.style.opacity = "1";
-    }, 10);
-  }, 500);
-
-  detailToggle = true;
-}
-
-function showGrid() {
-  const menuBottom = document.getElementById("menuBottom");
-  const workGrid = document.getElementById("workGrid");
-  const detailledGrid = document.getElementById("detailledGrid");
-
-  workGrid.style.transition = "opacity 500ms";
-  detailledGrid.style.transition = "opacity 500ms";
-
-  detailledGrid.style.opacity = "0";
-  setTimeout(function () {
-    detailledGrid.style.display = "none";
-    workGrid.style.display = "block";
-    setTimeout(function () {
-      workGrid.style.opacity = "1";
-    }, 10);
-  }, 500);
-
-  detailToggle = false;
-}
-
 /* =============== Dark Mode =============== */
 
 let contrastToggle = false;

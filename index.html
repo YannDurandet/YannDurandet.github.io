@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yann Durandet</title>
     <link rel="icon" href="assets/website-logo/InitialsIcon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="linkHoverEffect.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/linkHoverEffect.css">
 </head>
 
 <body>
@@ -38,8 +38,7 @@
                 <a href="https://www.linkedin.com/in/yann-durandet-web-designer/" target="_blank"><i
                         class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://github.com/YannDurandet" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a onclick="toggleContrast()" class="noDisplayNight"><i class="fa-solid fa-lightbulb"></i></a>
-                <a onclick="toggleContrast()" class="noDisplayDay"><i class="fa-regular fa-lightbulb"></i></a>
+                <a onclick="toggleContrast()"><i class="fa-regular fa-lightbulb"></i></a>
             </div>
             <div class="navbarFooter">
                 <p class="navbarFooterText">Copyright &copy; 2023 <br>Yann Durandet.</p>
@@ -54,28 +53,25 @@
                             class="colorfulGradient">Yann</span>.</h1>
                     <p class="heroDesc">
                         J'ai 20 ans, étudiant à la <br><span class="colorfulGradient"><b>Normandie Web
-                                School</b></span>.
-                    </p>
-                    <div class="navbarSocialMobile">
-                        <a href="https://www.instagram.com/yann_visuals" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/yann-durandet-web-designer/" target="_blank"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/YannDurandet" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a onclick="toggleContrast()" class="noDisplayNight"><i class="fa-solid fa-lightbulb"></i></a>
-                        <a onclick="toggleContrast()" class="noDisplayDay"><i class="fa-regular fa-lightbulb"></i></a>
-                    </div>
+                        School</b></span>.</p>
+                        <div class="navbarSocialMobile">
+                            <a href="https://www.instagram.com/yann_visuals" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/yann-durandet-web-designer/" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/YannDurandet" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a onclick="toggleContrast()"><i class="fa-regular fa-lightbulb"></i></a>
+                        </div>
                 </div>
                 <img id="heroIllustration" class="noDisplayDay" src="assets/svg/heroIllustration.svg" />
-                <img id="heroIllustration" class="noDisplayNight"
-                    src="assets/svg/heroIllustrationDark.svg" />
+                <img id="heroIllustration" class="noDisplayNight" src="assets/svg/heroIllustrationDark.svg" />
             </div>
         </section>
         <section id="About">
             <div id="aboutContainer">
                 <div class="aboutHalfLeft">
                     <div class="aboutWelcome">
-                        <p class="aboutWelcomeText"><span>Ravi de vous rencontrer !</span><br>BIENVENUE CHEZ...</p>
+                        <p><span>Ravi de vous rencontrer !</span><br>BIENVENUE CHEZ...</p>
                     </div>
                     <div class="aboutMe">
                         <p class="aboutName colorfulGradient"><b>YANN DURANDET</b></p>
@@ -83,7 +79,7 @@
                         <div class="linkBox click">
                             <a href="cv.html">
                                 <span>Voir Mon CV</span>
-                                <img src="assets/icons/northEastArrowIcon.svg"/>
+                                <img src="assets/icons/northEastArrowIcon.svg" />
                             </a>
                         </div>
                         <img class="aboutImg noDisplayDay" src="assets/svg/aboutIllustration.svg" />
@@ -135,14 +131,14 @@
             </div>
         </section>
         <section id="workMenu">
-            <div class="menuTop">
+            <!-- <div class="menuTop">
                 <a href="#workMenu" onclick="showGrid()" id="workGridToggleButton" class="menuButtonTop">
                     <img src="assets/icons/gridIcon.svg" id="gridIcon" />
                 </a>
                 <a href="#workMenu" onclick="showDetails()" id="detailToggleButton" class="menuButtonTop">
                     <img src="assets/icons/bricksIcon.svg" id="brickIcon" />
                 </a>
-            </div>
+            </div> -->
             <div id="menuBottom">
                 <a onclick="showAll()" id="showAllButton" class="menubutton linkHoverEffect linkHoverEffectColor">
                     Retour
@@ -167,158 +163,128 @@
         </section>
         <section id="workGrid">
             <div class="container">
-                <div class="workItem gridItem webDevItem">
+                <div class="workItem illustrationItem">
                     <div class="workDescription">
-                        <p class="workDescTag">
-                            Web Dev / UI Design
-                        </p>
-                        <h4 class="workDescTitle">
-                            Pong - Matrix themed
-                        </h4>
+                        <p>Photographie</p>
+                        <h4>Automobile (Forza Horizon)</h4>
+                        <div class="linkBox click">
+                            <a href="forzaphotography.html">
+                                <span>Voir</span>
+                                <img src="assets/icons/northEastArrowIcon.svg" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="workImageHolder">
+                        <img src="assets/work-grid/Forzaa.png" class="workImage" alt="Page checkout Quiet">
+                    </div>
+                </div>
+                <div class="workItem webDevItem">
+                    <div class="workDescription">
+                        <p>Web Dev / UI Design</p>
+                        <h4>Pong - Matrix themed</h4>
+                        <div class="linkBox click">
+                            <a href="https://yanndurandet.github.io/TheMatrix/" target="_blank">
+                                <span>Voir</span>
+                                <img src="assets/icons/northEastArrowIcon.svg" />
+                            </a>
+                        </div>
                     </div>
                     <div class="workImageHolder">
                         <img src="assets/work-grid/matrix.png" class="workImage" alt="Page checkout Quiet">
                     </div>
                 </div>
-                <div class="workItem gridItem webDesignItem">
+                <div class="workItem webDesignItem">
                     <div class="workDescription">
-                        <p class="workDescTag">
-                            UX & UI Design
-                        </p>
-                        <h4 class="workDescTitle">
-                            L'agence
-                        </h4>
+                        <p>UX & UI Design</p>
+                        <h4>L'agence</h4>
                     </div>
                     <div class="workImageHolder">
                         <img src="assets/work-grid/agence.png" class="workImage" alt="Logo du Garage JDM">
                     </div>
                 </div>
-                <div class="workItem gridItem webDesignItem">
+                <div class="workItem webDesignItem">
                     <div class="workDescription">
-                        <p class="workDescTag">
-                            UX & UI Design
-                        </p>
-                        <h4 class="workDescTitle">
-                            Quiet Racing
-                        </h4>
+                        <p>UX & UI Design</p>
+                        <h4>Quiet Racing</h4>
                     </div>
                     <div class="workImageHolder">
                         <img src="assets/work-grid/design-quiet-racing.jpg" class="workImage" alt="Page checkout Quiet">
                     </div>
                 </div>
-                <div class="workItem gridItem webDesignItem logoItem">
+                <div class="workItem logoItem">
                     <div class="workDescription">
-                        <p class="workDescTag">
-                            UX & UI Design / Logo
-                        </p>
-                        <h4 class="workDescTitle">
-                            Cat & Flo
-                        </h4>
-                    </div>
-                    <div class="workImageHolder">
-                        <img src="assets/work-grid/cat-flo.png" class="workImage" alt="Logo du Garage JDM">
-                    </div>
-                </div>
-                <div class="workItem gridItem logoItem">
-                    <div class="workDescription">
-                        <p class="workDescTag">
-                            Logo & Charte Graphique
-                        </p>
-                        <h4 class="workDescTitle">
-                            Han's Garage
-                        </h4>
+                        <p>Logo & Charte Graphique</p>
+                        <h4>Han's Garage</h4>
                     </div>
                     <div class="workImageHolder">
                         <img src="assets/work-grid/logo-han-garage.jpg" class="workImage" alt="Logo du Garage JDM">
                     </div>
                 </div>
-                <div class="workItem gridItem logoItem">
+                <div class="workItem logoItem">
                     <div class="workDescription">
-                        <p class="workDescTag">
-                            Logo
-                        </p>
-                        <h4 class="workDescTitle">
-                            EVER EAST
-                        </h4>
+                        <p>Logo</p>
+                        <h4>EVER EAST</h4>
                     </div>
                     <div class="workImageHolder">
                         <img src="assets/work-grid/logo-ever-east.jpg" class="workImage" alt="IMAGE TEXT">
                     </div>
                 </div>
-                <div class="workItem gridItem logoItem">
+                <div class="workItem logoItem">
                     <div class="workDescription">
-                        <p class="workDescTag">
-                            Logo
-                        </p>
-                        <h4 class="workDescTitle">
-                            Heart Shards
-                        </h4>
+                        <p>Logo</p>
+                        <h4>Heart Shards</h4>
                     </div>
                     <div class="workImageHolder">
                         <img src="assets/work-grid/logo-heart-shards.jpg" class="workImage" alt="4 coeurs colorés">
                     </div>
                 </div>
-                <div class="workItem gridItem illustrationItem">
+                <div class="workItem illustrationItem">
                     <div class="workDescription">
-                        <p class="workDescTag">
-                            Illustration
-                        </p>
-                        <h4 class="workDescTitle">
-                            Paysage de Far West
-                        </h4>
+                        <p>Illustration</p>
+                        <h4>Paysage de Far West</h4>
                     </div>
                     <div class="workImageHolder">
                         <img src="assets/work-grid/illustration-far-west.jpg" class="workImage" alt="IMAGE TEXT">
                     </div>
                 </div>
-                <div class="workItem gridItem illustrationItem">
+                <div class="workItem illustrationItem">
                     <div class="workDescription">
-                        <p class="workDescTag">
-                            Illustration
-                        </p>
-                        <h4 class="workDescTitle">
-                            Paysage de Montagne
-                        </h4>
+                        <p>Illustration</p>
+                        <h4>Paysage de Montagne</h4>
                     </div>
                     <div class="workImageHolder">
                         <img src="assets/work-grid/illustration-mountains.jpg" class="workImage"
                             alt="Mountain Landscape">
                     </div>
                 </div>
-                <div class="workItem gridItem webDevItem">
+                <div class="workItem webDevItem">
                     <div class="workDescription">
-                        <p class="workDescTag">
-                            HTML / CSS
-                        </p>
-                        <h4 class="workDescTitle">
-                            Site Vitrine
-                        </h4>
+                        <p>HTML / CSS</p>
+                        <h4>Site Vitrine</h4>
+                        <div class="linkBox click">
+                            <a href="https://yanndurandet.github.io/YannDesigns/" target="_blank">
+                                <span>Voir</span>
+                                <img src="assets/icons/northEastArrowIcon.svg" />
+                            </a>
+                        </div>
                     </div>
                     <div class="workImageHolder">
                         <img src="assets/work-grid/minecraft.png" class="workImage" alt="Mon Logotype">
                     </div>
                 </div>
-                <div class="workItem gridItem logoItem">
+                <div class="workItem logoItem">
                     <div class="workDescription">
-                        <p class="workDescTag">
-                            Logo / Charte Graphique
-                        </p>
-                        <h4 class="workDescTitle">
-                            Logo Personnel
-                        </h4>
+                        <p>Logo / Charte Graphique</p>
+                        <h4>Logo Personnel</h4>
                     </div>
                     <div class="workImageHolder">
                         <img src="assets/work-grid/logo-yann-durandet.jpg" class="workImage" alt="Mon Logotype">
                     </div>
                 </div>
-                <div class="workItem gridItem illustrationItem">
+                <div class="workItem illustrationItem">
                     <div class="workDescription">
-                        <p class="workDescTag">
-                            illustration
-                        </p>
-                        <h4 class="workDescTitle">
-                            Solo : A Star Wars Story
-                        </h4>
+                        <p>Illustration</p>
+                        <h4>Solo : A Star Wars Story</h4>
                     </div>
                     <div class="workImageHolder">
                         <img src="assets/work-grid/illustration-han-solo.jpg" class="workImage" alt="IMAGE TEXT">
@@ -326,92 +292,21 @@
                 </div>
             </div>
         </section>
-        <section id="detailledGrid">
-            <div class="detailItem workItem logoItem">
-                <div class="detailLeftColumn">
-                    <img src="assets/work-details/logotypes.png" alt="Illustrations variées" class="detailImage">
-                </div>
-                <div class="detailRightColumn">
-                    <h2 class="aboutName">Logotypes</h2>
-                    <p class="detailDesc">Voici en détail tout les logotypes que j'ai réalisé.</p>
-                    <div class="linkBox click">
-                        <a href="workInProgress.html" class="resumeLink">
-                            <span>En savoir plus</span>
-                            <img src="assets/icons/northEastArrowIcon.svg"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="detailItem workItem webDesignItem">
-                <div class="detailLeftColumn">
-                    <img src="assets/work-details/webDesign.png" alt="Illustrations variées" class="detailImage">
-                </div>
-                <div class="detailRightColumn">
-                    <h2 class="aboutName">UI & UX</h2>
-                    <p class="detailDesc">Ici vous retrouverez tout mes projets UI.</p>
-                    <div class="linkBox click">
-                        <a href="workInProgress.html" class="resumeLink">
-                            <span>En savoir plus</span>
-                            <img src="assets/icons/northEastArrowIcon.svg"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="detailItem workItem illustrationItem">
-                <div class="detailLeftColumn">
-                    <img src="assets/work-details/Illustrations.png" alt="Illustrations variées" class="detailImage">
-                </div>
-                <div class="detailRightColumn">
-                    <h2 class="aboutName">Illustrations</h2>
-                    <p class="detailDesc">quelques illustrations réalisées, principalement dans l'objectif d'apprendre Illustrator</p>
-                    <div class="linkBox click">
-                        <a href="workInProgress.html" class="resumeLink">
-                            <span>En savoir plus</span>
-                            <img src="assets/icons/northEastArrowIcon.svg"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="detailItem workItem webDevItem">
-                <div class="detailLeftColumn">
-                    <img src="assets/work-details/Developpement.png" alt="Illustrations variées" class="detailImage">
-                </div>
-                <div class="detailRightColumn">
-                    <h2 class="aboutName">Développement</h2>
-                    <p class="detailDesc">Mes quelques projets de dévollepement web, en CSS & JS.</p>
-                    <div class="linkBox click">
-                        <a href="workInProgress.html" class="resumeLink">
-                            <span>En savoir plus</span>
-                            <img src="assets/icons/northEastArrowIcon.svg"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
         <div class="waveHolder">
-            <img src="assets/svg/wave.svg" alt="" />
+            <img src="assets/svg/wave.svg"/>
         </div>
         <footer>
-            <div class="container">
-                <div class="footerRow">
-                    <a href="#" class="footerAnchor">
-                        <figure class="footerLogo">
-                            <img src="assets/website-logo/logoWhite.svg" class="footerLogoImg" alt="LOGO YD">
-                        </figure>
-                    </a>
-                    <div class="footerSocialList">
-                        <a href="https://instagram.com/yann.drndt" target="_blank"
-                            class="footerSocialLink">Instagram</a>
-                        <a href="https://github.com/YannDurandet" target="_blank" class="footerSocialLink">GitHub</a>
-                        <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank"
-                            class="footerSocialLink">LinkedIn</a>
-                        <a href="cv.html" target="_blank" class="footerSocialLink">CV</a>
-                    </div>
-                    <div class="footerCopyright" onclick="toggleGoofy()">
-                        Copyright &copy; 2023 Yann Durandet
-                    </div>
-                </div>
+            <a href="#" class="footerAnchor">
+                <img src="assets/website-logo/logoWhite.svg" class="footerLogoImg" alt="LOGO YD">
+            </a>
+            <div class="footerSocialList">
+                <a href="https://instagram.com/yann_visuals" target="_blank">Instagram</a>
+                <a href="https://github.com/YannDurandet" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank">LinkedIn</a>
+                <a href="cv.html">CV</a>
+            </div>
+            <div class="footerCopyright" onclick="toggleGoofy()">
+                Copyright &copy; 2023 Yann Durandet.
             </div>
         </footer>
     </div>
