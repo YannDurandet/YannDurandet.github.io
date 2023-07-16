@@ -87,3 +87,26 @@ color: white;
   border-top-left-radius: 64px;
   border-bottom-right-radius: 64px;
 }
+
+.navbarSocialMobile{
+  background-color: #00000090;
+  backdrop-filter: blur(32px);
+}
+
+@media (max-width : 768px) {
+  .forzaContentInner h1{
+    font-size: 48px;
+  }
+  .forzaContent {
+    max-width: 95vw;
+    margin-left: 0;
+    margin: 12vh auto 100vh auto;
+  }
+  .forzaImages{
+    max-width: 90vw;
+  }
+  .forzaImages img {
+    border-top-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+}

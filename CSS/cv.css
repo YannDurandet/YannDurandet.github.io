@@ -1,21 +1,21 @@
 #CV {
     display: flex;
     flex-direction: column;
+    margin-left: 16vw;
 }
 
-
-.cvSectionTitleText{
+.cvSectionTitleText {
     padding-bottom: 12px;
     width: fit-content;
 }
 
-.cvSectionContent{
+.cvSectionContent {
     margin-bottom: 12px;
     padding: 4px 24px 4px 12px;
     border-left: #252525 2px solid;
 }
 
-.listRow{
+.listRow {
     display: flex;
     flex-direction: row;
 }
@@ -28,12 +28,12 @@
     height: fit-content;
 }
 
-.cvAboutTitle{
+.cvAboutTitle {
     width: fit-content;
     padding: 24px 0 0 16px;
 }
 
-.cvAboutText{
+.cvAboutText {
     padding: 12px 0 24px 12px;
     color: white;
 }
@@ -43,19 +43,19 @@
     flex-direction: row;
 }
 
-.cvAboutList{
+.cvAboutList {
     display: flex;
     flex-direction: column;
     padding: 0 0 0 24px;
 }
 
-.cvAboutListItem{
+.cvAboutListItem {
     margin: 0 32px 16px 0;
 }
 
 /* =============================== MAIN ========================== */
 
-#Main{
+#Main {
     display: flex;
     flex-direction: row;
     background-color: #f0f0f0;
@@ -65,7 +65,7 @@
 #Formations,
 #Experiences,
 #Competences,
-#Loisirs{
+#Loisirs {
     padding: 24px 0 0 24px;
 }
 
@@ -78,3 +78,21 @@
     width: 50%;
 }
 
+@media (max-width : 768px) {
+    #CV{
+        margin-left: 0;
+    }
+    .listRow{
+        flex-direction: column;
+    }
+    #Main{
+        flex-direction: column;
+    }
+    .navbarSocialMobile{
+        margin-left: 4vw;
+    }
+    #Left{
+        width: 90vw;
+        border-right: none;
+    }
+}

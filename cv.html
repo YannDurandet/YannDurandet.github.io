@@ -9,6 +9,7 @@
     <link rel="icon" href="assets/website-logo/InitialsIcon.svg" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/cv.css">
+    <link rel="stylesheet" href="CSS/linkHoverEffect.css">
 </head>
 
 <body>
@@ -20,6 +21,9 @@
             <ul class="navbarLinks">
                 <li>
                     <a href="index.html" class="linkHoverEffect linkHoverEffectColorCover">HOME</a>
+                </li>
+                <li>
+                    <a href="#" class="linkHoverEffect linkHoverEffectColorCover">HAUT DE PAGE</a>
                 </li>
                 <li>
                     <a href="mailto:durandet.yann@gmail.com"
@@ -39,186 +43,183 @@
             </div>
         </nav>
     </div>
-    <div class="content">
-        <section id="CV">
-            <div id="Top">
-                <div id="cvAbout">
-                    <h1 class="cvAboutTitle colorfulGradient">À propos</h1>
-                    <p class="cvAboutText">Actuellement étudiant à la Normandie Web School en spécialité communication
-                        graphique,<br>
-                        j'apprends entre autres le design web, l'UX/UI, la typographie.<br>
-                        Je recherche une alternance
-                        qui me permettre de mettre en oeuvre mes compétences pour la rentrée dans ce domaine.<br>
-                        J'ai une expérience variée, du développement web “front-end” à la création de contenu pour les
-                        réseaux sociaux ou encore la réalisation de chartes
-                        graphiques.
+    <section id="CV">
+        <div id="Top">
+            <div id="cvAbout">
+                <h1 class="cvAboutTitle colorfulGradient">À propos</h1>
+                <p class="cvAboutText">Actuellement étudiant à la Normandie Web School en spécialité communication
+                    graphique,<br>
+                    j'apprends entre autres le design web, l'UX/UI, la typographie.<br>
+                    Je recherche une alternance
+                    qui me permettre de mettre en oeuvre mes compétences pour la rentrée dans ce domaine.<br>
+                    J'ai une expérience variée, du développement web “front-end” à la création de contenu pour les
+                    réseaux sociaux ou encore la réalisation de chartes
+                    graphiques.
+                </p>
+            </div>
+            <div class="listRow">
+                <ul class="cvAboutList">
+                    <li class="cvAboutListItem">
+                        <i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;Sotteville-lès-Rouen
+                    </li>
+                    <li class="cvAboutListItem">
+                        <i class="fa-solid fa-car"></i>&nbsp;&nbsp;&nbsp;Permis B & PSC1
+                    </li>
+                </ul>
+                <ul class="cvAboutList">
+                    <li class="cvAboutListItem">
+                        <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+33 651 809 285
+                    </li>
+                    <li class="cvAboutListItem">
+                        <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;durandet.yann@gmail.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="Main">
+            <div class="navbarSocialMobile">
+                <a href="index.html"><i class="fa-solid fa-angles-left"></i></a>
+                <a href="https://www.instagram.com/yann_visuals" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/yann-durandet-web-designer/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/YannDurandet" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a onclick="toggleContrast()"><i class="fa-regular fa-lightbulb"></i></a>
+            </div>
+            <div id="Left">
+                <div id="Experiences">
+                    <div class="cvSectionTitle">
+                        <h2 class="cvSectionTitleText colorfulGradient">
+                            Expériences
+                        </h2>
+                    </div>
+                    <div class="cvSectionContentHolder">
+                        <div class="cvSectionContent">
+                            <p>
+                                Printemps 2023<br>
+                                UI Designer & Social Media Manager<br>
+                                Stage - BD Conseil<br>
+                            </p>
+                        </div>
+                        <div class="cvSectionContent">
+                            <p>
+                                Décembre 2022<br>
+                                Refonte du site web de Freneuse-sur-Risle<br>
+                                Projet de groupe - Normandie Web School<br>
+
+                            </p>
+                        </div>
+                        <div class="cvSectionContent">
+                            <p>
+                                Septembre 2022<br>
+                                Développeur web junior<br>
+                                Stage - Xqual<br>
+                            </p>
+                        </div>
+                        <div class="cvSectionContent">
+                            <p>
+                                Février 2018<br>
+                                Stage d'observation de 3ème<br>
+                                Aptar Pharma Charleval<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="Formations">
+                    <div class="cvSectionTitle">
+                        <h2 class="cvSectionTitleText colorfulGradient">
+                            Formations
+                        </h2>
+                    </div>
+                    <div class="cvSectionContentHolder">
+                        <div class="cvSectionContent">
+                            <p>
+                                2022 - 2025<br>
+                                Normandie Web School<br>
+                                Préparation au titre de Chef de Projet Digital<br>
+                            </p>
+                        </div>
+                        <div class="cvSectionContent">
+                            <p>
+                                2021 - 2022<br>
+                                Université de Rouen<br>
+                                1ère année de licence IEEEA<br>
+                            </p>
+                        </div>
+                        <div class="cvSectionContent">
+                            <p>
+                                2018 - 2021<br>
+                                Lycée Gustave Flaubert - Rouen<br>
+                                Bac spécialités NSI, Math, Anglais<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Right">
+                <div id="Competences">
+                    <h2 class="cvSectionTitleText colorfulGradient">Transverses / Techniques</h2>
+                    <div class="listRow">
+                        <ul>
+                            <li class="cvSectionContent">Créativité</li>
+                            <li class="cvSectionContent">Autonomie</li>
+                            <li class="cvSectionContent">Gestion de projet</li>
+                            <li class="cvSectionContent">Anglais (Bilingue)</li>
+                            <li class="cvSectionContent">Allemand (Avancé)</li>
+                        </ul>
+                        <ul>
+                            <li class="cvSectionContent">Web Design (wireframes, maquettes)</li>
+                            <li class="cvSectionContent">Créations Visuelles (logo, print)</li>
+                            <li class="cvSectionContent">Montage audio et vidéo</li>
+                            <li class="cvSectionContent">Retouche Photo</li>
+                            <li class="cvSectionContent">Rédaction (Anglais & Français)</li>
+                        </ul>
+                    </div>
+                    <h2 class="cvSectionTitleText colorfulGradient">Logicielles</h2>
+                    <div class="listRow">
+                        <ul>
+                            <li class="cvSectionContent">HTML</li>
+                            <li class="cvSectionContent">CSS / SASS</li>
+                            <li class="cvSectionContent">Javascript</li>
+                            <li class="cvSectionContent">Wordpress</li>
+                            <li class="cvSectionContent">Webflow</li>
+                            <li class="cvSectionContent">Illustrator</li>
+                        </ul>
+                        <ul>
+                            <li class="cvSectionContent">Photoshop</li>
+                            <li class="cvSectionContent">Lightroom</li>
+                            <li class="cvSectionContent">Premiere Pro</li>
+                            <li class="cvSectionContent">Figma</li>
+                            <li class="cvSectionContent">Blender</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div id="Loisirs">
+                    <h2 class="cvSectionTitleText colorfulGradient">Loisirs</h2>
+                    <p class="cvSectionContent">
+                        Musculation, Randonnée, Bike Trail, Photographie, Cinématographie
                     </p>
                 </div>
-                <div class="listRow">
-                    <ul class="cvAboutList">
-                        <li class="cvAboutListItem">
-                            <i class="fa-solid fa-house"></i>&nbsp;&nbsp;&nbsp;Sotteville-lès-Rouen
-                        </li>
-                        <li class="cvAboutListItem">
-                            <i class="fa-solid fa-car"></i>&nbsp;&nbsp;&nbsp;Permis B & PSC1
-                        </li>
-                    </ul>
-                    <ul class="cvAboutList">
-                        <li class="cvAboutListItem">
-                            <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+33 651 809 285
-                        </li>
-                        <li class="cvAboutListItem">
-                            <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;durandet.yann@gmail.com
-                        </li>
-                    </ul>
-                </div>
             </div>
-            <div id="Main">
-                <div id="Left">
-                    <div id="Experiences">
-                        <div class="cvSectionTitle">
-                            <h2 class="cvSectionTitleText colorfulGradient">
-                                Expériences
-                            </h2>
-                        </div>
-                        <div class="cvSectionContentHolder">
-                            <div class="cvSectionContent">
-                                <p>
-                                    Printemps 2023<br>
-                                    UI Designer & Social Media Manager<br>
-                                    Stage - BD Conseil<br>
-                                </p>
-                            </div>
-                            <div class="cvSectionContent">
-                                <p>
-                                    Décembre 2022<br>
-                                    Refonte du site web de Freneuse-sur-Risle<br>
-                                    Projet de groupe - Normandie Web School<br>
-
-                                </p>
-                            </div>
-                            <div class="cvSectionContent">
-                                <p>
-                                    Septembre 2022<br>
-                                    Développeur web junior<br>
-                                    Stage - Xqual<br>
-                                </p>
-                            </div>
-                            <div class="cvSectionContent">
-                                <p>
-                                    Février 2018<br>
-                                    Stage d'observation de 3ème<br>
-                                    Aptar Pharma Charleval<br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="Formations">
-                        <div class="cvSectionTitle">
-                            <h2 class="cvSectionTitleText colorfulGradient">
-                                Formations
-                            </h2>
-                        </div>
-                        <div class="cvSectionContentHolder">
-                            <div class="cvSectionContent">
-                                <p>
-                                    2022 - 2025<br>
-                                    Normandie Web School<br>
-                                    Préparation au titre de Chef de Projet Digital<br>
-                                </p>
-                            </div>
-                            <div class="cvSectionContent">
-                                <p>
-                                    2021 - 2022<br>
-                                    Université de Rouen<br>
-                                    1ère année de licence IEEEA<br>
-                                </p>
-                            </div>
-                            <div class="cvSectionContent">
-                                <p>
-                                    2018 - 2021<br>
-                                    Lycée Gustave Flaubert - Rouen<br>
-                                    Bac spécialités NSI, Math, Anglais<br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="Right">
-                    <div id="Competences">
-                        <h2 class="cvSectionTitleText colorfulGradient">Transverses / Techniques</h2>
-                        <div class="listRow">
-                            <ul>
-                                <li class="cvSectionContent">Créativité</li>
-                                <li class="cvSectionContent">Autonomie</li>
-                                <li class="cvSectionContent">Gestion de projet</li>
-                                <li class="cvSectionContent">Anglais (Bilingue)</li>
-                                <li class="cvSectionContent">Allemand (Avancé)</li>
-                            </ul>
-                            <ul>
-                                <li class="cvSectionContent">Web Design (wireframes, maquettes)</li>
-                                <li class="cvSectionContent">Créations Visuelles (logo, print)</li>
-                                <li class="cvSectionContent">Montage audio et vidéo</li>
-                                <li class="cvSectionContent">Retouche Photo</li>
-                                <li class="cvSectionContent">Rédaction (Anglais & Français)</li>
-                            </ul>
-                        </div>
-                        <h2 class="cvSectionTitleText colorfulGradient">Logicielles</h2>
-                        <div class="listRow">
-                            <ul>
-                                <li class="cvSectionContent">HTML</li>
-                                <li class="cvSectionContent">CSS / SASS</li>
-                                <li class="cvSectionContent">Javascript</li>
-                                <li class="cvSectionContent">Wordpress</li>
-                                <li class="cvSectionContent">Webflow</li>
-                                <li class="cvSectionContent">Illustrator</li>
-                            </ul>
-                            <ul>
-                                <li class="cvSectionContent">Photoshop</li>
-                                <li class="cvSectionContent">Lightroom</li>
-                                <li class="cvSectionContent">Premiere Pro</li>
-                                <li class="cvSectionContent">Figma</li>
-                                <li class="cvSectionContent">Blender</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <div id="Loisirs">
-                        <h2 class="cvSectionTitleText colorfulGradient">Loisirs</h2>
-                        <p class="cvSectionContent">
-                            Musculation, Randonnée, Bike Trail, Photographie, Cinématographie
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
+    <div class="content">
         <div class="waveHolder">
             <img src="assets/svg/wave.svg" alt="" />
         </div>
-        <footer class="blackBG">
-            <div class="container">
-                <div class="footerRow">
-                    <a href="#" class="footerAnchor">
-                        <figure class="footerLogo">
-                            <img src="assets/website-logo/logoWhite.svg" class="footerLogoImg" alt="LOGO YD">
-                        </figure>
-                        <span class="footerLogoPopper">
-                            Top
-                            <i class="fas fa-arrow-up"></i>
-                        </span>
-                    </a>
-                    <div class="footerSocialList">
-                        <a href="https://instagram.com/yann.drndt" target="_blank"
-                            class="footerSocialLink">Instagram</a>
-                        <a href="https://github.com/YannDurandet" target="_blank" class="footerSocialLink">GitHub</a>
-                        <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank"
-                            class="footerSocialLink">LinkedIn</a>
-                        <a href="assets/CV_YANN_DURANDET.pdf" target="_blank" class="footerSocialLink">CV</a>
-                    </div>
-                    <div class="footerCopyright">
-                        Copyright &copy; 2023 Yann Durandet
-                    </div>
-                </div>
+        <footer>
+            <a href="#" class="footerAnchor">
+                <img src="assets/website-logo/logoWhite.svg" class="footerLogoImg" alt="LOGO YD">
+            </a>
+            <div class="footerSocialList">
+                <a href="index.html">Accueil</a>
+                <a href="https://instagram.com/yann_visuals" target="_blank">Instagram</a>
+                <a href="https://github.com/YannDurandet" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="footerCopyright">
+                Copyright &copy; 2023 Yann Durandet.
             </div>
         </footer>
     </div>
