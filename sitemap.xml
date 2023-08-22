@@ -17,6 +17,11 @@
   </url>
 
   <url>
+    <loc>https://yanndurandet.me/miniphotography.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://yanndurandet.me/workInProgress.html</loc>
     <priority>0.0</priority>
   </url>

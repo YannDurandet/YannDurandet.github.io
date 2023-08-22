@@ -53,15 +53,16 @@
                             class="colorfulGradient">Yann</span>.</h1>
                     <p class="heroDesc">
                         J'ai 20 ans, étudiant à la <br><span class="colorfulGradient"><b>Normandie Web
-                        School</b></span>.</p>
-                        <div class="navbarSocialMobile">
-                            <a href="https://www.instagram.com/yann_visuals" target="_blank"><i
-                                    class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/yann-durandet-web-designer/" target="_blank"><i
-                                    class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="https://github.com/YannDurandet" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a onclick="toggleContrast()"><i class="fa-regular fa-lightbulb"></i></a>
-                        </div>
+                                School</b></span>.</p>
+                    <div class="navbarSocialMobile">
+                        <a href="https://www.instagram.com/yann_visuals" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/yann-durandet-web-designer/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/YannDurandet" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a onclick="toggleContrast()"><i class="fa-regular fa-lightbulb"></i></a>
+                    </div>
                 </div>
                 <img id="heroIllustration" class="noDisplayDay" src="assets/svg/heroIllustration.svg" />
                 <img id="heroIllustration" class="noDisplayNight" src="assets/svg/heroIllustrationDark.svg" />
@@ -116,7 +117,7 @@
                         </div>
                         <div class="infoBox">
                             <div class="infoHeading">
-                                <h2 class="colorfulGradient">11</h2>
+                                <h2 class="colorfulGradient">10</h2>
                                 <h3>Projets<br>réalisés</h3>
                             </div>
                             <p>Avec mon expérience,<br> je suis en capacité de<br> vous aider à
@@ -143,6 +144,10 @@
                 <a onclick="showAll()" id="showAllButton" class="menubutton linkHoverEffect linkHoverEffectColor">
                     Retour
                 </a>
+                <a href="#workMenu" onclick="toggleIllustrations()" id="illustrationButton"
+                    class="menubutton linkHoverEffect linkHoverEffectColor">
+                    Photographie
+                </a>
                 <a href="#workMenu" onclick="toggleLogos()" id="LogoButton"
                     class="menubutton linkHoverEffect linkHoverEffectColor">
                     Logos
@@ -150,10 +155,6 @@
                 <a href="#workMenu" onclick="toggleDesigns()" id="webDesignButton"
                     class="menubutton linkHoverEffect linkHoverEffectColor">
                     UX&nbsp;&&nbsp;UI
-                </a>
-                <a href="#workMenu" onclick="toggleIllustrations()" id="illustrationButton"
-                    class="menubutton linkHoverEffect linkHoverEffectColor">
-                    Illustrations
                 </a>
                 <a href="#workMenu" onclick="toggleDev()" id="devButton"
                     class="menubutton linkHoverEffect linkHoverEffectColor click">
@@ -165,17 +166,23 @@
             <div class="container">
                 <div class="workItem illustrationItem">
                     <div class="workDescription">
-                        <p>Visuel</p>
-                        <h4>Pink Glass</h4>
+                        <p>Photographie</p>
+                        <h4>Mini Cooper S</h4>
+                        <div class="linkBox click">
+                            <a href="miniphotography.html">
+                                <span>Voir</span>
+                                <img src="assets/icons/northEastArrowIcon.svg" />
+                            </a>
+                        </div>
                     </div>
                     <div class="workImageHolder">
-                        <img src="assets/work-grid/illustration-pink-glass.png" class="workImage" alt="Page checkout Quiet">
+                        <img src="assets/work-grid/miniCover.jpg" class="workImage" alt="Page checkout Quiet">
                     </div>
                 </div>
                 <div class="workItem illustrationItem">
                     <div class="workDescription">
                         <p>Photographie</p>
-                        <h4>Automobile (Forza Horizon)</h4>
+                        <h4>Automobile (FH5)</h4>
                         <div class="linkBox click">
                             <a href="forzaphotography.html">
                                 <span>Voir</span>
@@ -187,10 +194,19 @@
                         <img src="assets/work-grid/illustration-forza.png" class="workImage" alt="Page checkout Quiet">
                     </div>
                 </div>
+                <div class="workItem webDesignItem">
+                    <div class="workDescription">
+                        <p>UX & UI Design</p>
+                        <h4>Quiet Racing</h4>
+                    </div>
+                    <div class="workImageHolder">
+                        <img src="assets/work-grid/design-quiet-racing.jpg" class="workImage" alt="Page checkout Quiet">
+                    </div>
+                </div>
                 <div class="workItem webDevItem">
                     <div class="workDescription">
-                        <p>Web Dev / UI Design</p>
-                        <h4>Pong - Matrix themed</h4>
+                        <p>Devellopement Web</p>
+                        <h4>Pong - Matrix </h4>
                         <div class="linkBox click">
                             <a href="https://yanndurandet.github.io/TheMatrix/" target="_blank">
                                 <span>Voir</span>
@@ -209,15 +225,6 @@
                     </div>
                     <div class="workImageHolder">
                         <img src="assets/work-grid/design-agence.png" class="workImage" alt="Logo du Garage JDM">
-                    </div>
-                </div>
-                <div class="workItem webDesignItem">
-                    <div class="workDescription">
-                        <p>UX & UI Design</p>
-                        <h4>Quiet Racing</h4>
-                    </div>
-                    <div class="workImageHolder">
-                        <img src="assets/work-grid/design-quiet-racing.jpg" class="workImage" alt="Page checkout Quiet">
                     </div>
                 </div>
                 <div class="workItem logoItem">
@@ -249,7 +256,7 @@
                 </div>
                 <div class="workItem webDevItem webDesignItem">
                     <div class="workDescription">
-                        <p>HTML / CSS</p>
+                        <p>Devellopement Web</p>
                         <h4>Site Vitrine</h4>
                         <div class="linkBox click">
                             <a href="https://yanndurandet.github.io/YannDesigns/" target="_blank">
@@ -271,19 +278,10 @@
                         <img src="assets/work-grid/logo-yann-durandet.jpg" class="workImage" alt="Mon Logotype">
                     </div>
                 </div>
-                <div class="workItem illustrationItem">
-                    <div class="workDescription">
-                        <p>Illustration</p>
-                        <h4>Solo : A Star Wars Story</h4>
-                    </div>
-                    <div class="workImageHolder">
-                        <img src="assets/work-grid/illustration-han-solo.jpg" class="workImage" alt="IMAGE TEXT">
-                    </div>
-                </div>
             </div>
         </section>
         <div class="waveHolder">
-            <img src="assets/svg/wave.svg"/>
+            <img src="assets/svg/wave.svg" />
         </div>
         <footer>
             <a href="#" class="footerAnchor">
