@@ -8,22 +8,17 @@
 
   <url>
     <loc>https://yanndurandet.me/cv.html</loc>
-    <priority>0.0</priority>
+    <priority>0.1</priority>
   </url>
 
   <url>
     <loc>https://yanndurandet.me/forzaphotography.html</loc>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
 
   <url>
     <loc>https://yanndurandet.me/miniphotography.html</loc>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://yanndurandet.me/workInProgress.html</loc>
-    <priority>0.0</priority>
+    <priority>0.5</priority>
   </url>
 
 </urlset>
