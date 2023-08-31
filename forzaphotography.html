@@ -8,12 +8,11 @@
     <title>Yann Durandet</title>
     <link rel="icon" href="assets/website-logo/InitialsIcon.svg" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/forzaPage.css">
+    <link rel="stylesheet" href="CSS/photoPage.css">
     <link rel="stylesheet" href="CSS/linkHoverEffect.css">
 </head>
-
 <body>
-    <div class="navbar blurredNav noDisplayPhone">
+    <div class="navbar noDisplayPhone">
         <nav>
             <div class="navbarImage">
                 <img src="assets/website-logo/logoWhite.svg" />
@@ -36,67 +35,85 @@
                 <a href="https://www.linkedin.com/in/yann-durandet-web-designer/" target="_blank"><i
                         class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://github.com/YannDurandet" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a onclick="toggleContrast()"><i class="fa-regular fa-lightbulb"></i></a>
             </div>
             <div class="navbarFooter">
                 <p class="navbarFooterText">Copyright &copy; 2023 <br>Yann Durandet.</p>
             </div>
         </nav>
     </div>
-    <div class="forzaCover">
-        <img src="assets/forzaAssets/JaguarFly.png" alt="">
-    </div>
     <div class="navbarSocialMobile">
         <a href="index.html"><i class="fa-solid fa-angles-left"></i></a>
-        <a href="https://www.instagram.com/yann_visuals" target="_blank"><i
-                class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/yann_visuals" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/yann-durandet-web-designer/" target="_blank"><i
                 class="fa-brands fa-linkedin-in"></i></a>
         <a href="https://github.com/YannDurandet" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a onclick="toggleContrast()"><i class="fa-regular fa-lightbulb"></i></a>
     </div>
-    <div class="forzaContent">
-        <div class="forzaContentInner">
-            <h1>Photographie Automobile</h1>
-            <h2>(Sur Forza Horizon 5)</h2>
-            <p>J'adore la photographie, mais l'automobile encore plus. C'est pourquoi je passe la majorité de mon temps
-                sur <br><span>Forza Horizon 5</span> dans le mode photo (c'est faux, je passes mon temps à rater mes virages
-                et finir dans le décor)<br>et que j'essaie de pousser ma créativité photographique sans les limites qui
-                pourraient<br>m'être contraignantes à l'extérieur.
-            </p>
-            <div class="forzaImages">
-                <img src="assets/forzaAssets/AlpineDrift.png" alt="Alpine qui drift un virage au Mexique">
-                <img src="assets/forzaAssets/AlpineStorm.png" alt="Alpine sur un pont en face d'une tempête de sable au Mexique">
-                <img src="assets/forzaAssets/LamboSTO.png" alt="arrière d'une Lamborghini STO blanche en plein drift">
-                <img src="assets/forzaAssets/MiniBest.png" alt="Mini Cooper S sur un pont">
-                <img src="assets/forzaAssets/MiniBridgeSmoke.png" alt="Mini Cooper S sur un pont en drift">
-                <img src="assets/forzaAssets/MiniCloseUp.png" alt="Mini Cooper S sur un pont en gros plan">
-                <img src="assets/forzaAssets/MiataBridge.png" alt="Miata en fae d'un pont à l'horizon">
-                <img src="assets/forzaAssets/MiataJungle.png" alt="Miata dans la jungle">
-                <img src="assets/forzaAssets/MiataHeadLights.png" alt="feux avant d'une Mazda Miata dans le brouillard">
-                <img src="assets/forzaAssets/JaguarHome.png" alt=" Jaguar (voiture) devant une petite maison mexicaine">
-                <img src="assets/forzaAssets/JaguarFly.png" alt="Jaguar (voiture) en plein vol">
-                <img src="assets/forzaAssets/CarreraGTDay.png" alt="Porsche Carrera GT dans les rues d'une ville mexicaine">
-                <img src="assets/forzaAssets/CarreraGTTunnel.png" alt="Porsche Carrera GT qui sors d'un tunnel">
-                <img src="assets/forzaAssets/PorscheStorm.png" alt="Porsche dans une tempête de sable">
+    <div class="photoContent">
+        <h1>Photographie Automobile</h1>
+        <h2>(Sur Forza Horizon 5)<span> - Attention, les images peuvent mettre du temps à charger</span></h2>
+        <p>J'adore la photographie, mais l'automobile encore plus.<br> C'est pourquoi je passe beaucoup (trop?) temps sur Forza Horizon 5
+            dans le mode photo<br>(c'est faux, je passes mon temps à rater mes virages
+            et finir dans le décor)<br>et que j'essaie de pousser ma créativité photographique sans les limites qui
+            pourraient m'être contraignantes à l'extérieur.
+        </p>
+        <div class="image-grid">
+            <div class="image-item">
+                <div class="image-content" style="background-image: url('assets/forzaAssets/AMG DRIFT.png');"></div>
+            </div>
+            <div class="image-item">
+                <div class="image-content" style="background-image: url('assets/forzaAssets/AMG SUN.png');"></div>
+            </div>
+            <div class="image-item">
+                <div class="image-content" style="background-image: url('assets/forzaAssets/AMG STOPLIGHT.png');"></div>
+            </div>
+            <div class="image-item">
+                <div class="image-content" style="background-image: url('assets/forzaAssets/stoLeftSpeed.png');"></div>
+            </div>
+            <div class="image-item">
+                <div class="image-content" style="background-image: url('assets/forzaAssets/stoPlate.png');"></div>
+            </div>
+            <div class="image-item">
+                <div class="image-content" style="background-image: url('assets/forzaAssets/stoReflection.png');"></div>
+            </div>
+            <div class="image-item">
+                <div class="image-content" style="background-image: url('assets/forzaAssets/MiniBest.png');"></div>
+            </div>
+            <div class="image-item">
+                <div class="image-content" style="background-image: url('assets/forzaAssets/MiniBridgeSmoke.png');"></div>
+            </div>
+            <div class="image-item">
+                <div class="image-content" style="background-image: url('assets/forzaAssets/JaguarFly.png');"></div>
+            </div>
+            <div class="image-item">
+                <div class="image-content" style="background-image: url('assets/forzaAssets/skyline.png');"></div>
+            </div>
+            <div class="image-item">
+                <div class="image-content" style="background-image: url('assets/forzaAssets/skylineBeach.png');"></div>
+            </div>
+            <div class="image-item">
+                <div class="image-content" style="background-image: url('assets/forzaAssets/beetle.png');"></div>
             </div>
         </div>
-    </div>
-    <div class="waveHolder">
-        <img src="assets/svg/wave.svg"/>
-    </div>
-    <footer>
-        <a href="#" class="footerAnchor">
-            <img src="assets/website-logo/logoWhite.svg" class="footerLogoImg" alt="LOGO YD">
-        </a>
-        <div class="footerSocialList">
-            <a href="https://instagram.com/yann_visuals" target="_blank">Instagram</a>
-            <a href="https://github.com/YannDurandet" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank">LinkedIn</a>
-            <a href="cv.html">CV</a>
+        <div class="waveHolder">
+            <img src="assets/svg/wave.svg" />
         </div>
-        <div class="footerCopyright">
-            Copyright &copy; 2023 Yann Durandet.
-        </div>
-    </footer>
+        <footer>
+            <a href="#" class="footerAnchor">
+                <img src="assets/website-logo/logoWhite.svg" class="footerLogoImg" alt="LOGO YD">
+            </a>
+            <div class="footerSocialList">
+                <a href="https://instagram.com/yann_visuals" target="_blank">Instagram</a>
+                <a href="https://github.com/YannDurandet" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank">LinkedIn</a>
+                <a href="cv.html">CV</a>
+            </div>
+            <div class="footerCopyright">
+                Copyright &copy; 2023 Yann Durandet.
+            </div>
+        </footer>
+    </div>
 </body>
 <script src="https://kit.fontawesome.com/3c2baa7ea7.js"></script>
 <script src="index.js"></script>
