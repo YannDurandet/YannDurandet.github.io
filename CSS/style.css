@@ -418,12 +418,16 @@ nav {
   width:fit-content;
 }
 
-.menubutton {
+#workMenu a {
+  font-size: 20px;
   font-weight: 600;
   cursor: pointer;
   color: black;
   margin: 0 36px;
 }
+
+#workMenu a:hover {
+color: #f0f0f0;}
 
 #showAllButton {
   display: none;
@@ -574,6 +578,9 @@ footer {
   color: #e0e0e0;
 }
 
+.darkTheme #workMenu a {
+  color: #e0e0e0;
+}
 .darkTheme .coordsIcon {
   opacity: 0.33;
 }

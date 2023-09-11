@@ -15,7 +15,7 @@
     <div class="navbar noDisplayPhone">
         <nav>
             <div class="navbarImage">
-                <img src="assets/website-logo/logoWhite.svg" />
+                <img src="assets/website-logo/logoWhite.svg" alt="Logotype personnel resprésenant un Y & un D entre chevrons"/>
             </div>
             <ul class="navbarLinks">
                 <li>
@@ -61,11 +61,11 @@
                                 class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://github.com/YannDurandet" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
-                        <a onclick="toggleContrast()"><i class="fa-regular fa-lightbulb"></i></a>
+                        <a onclick="toggleContrast()" href="#"><i class="fa-regular fa-lightbulb"></i></a>
                     </div>
                 </div>
-                <img id="heroIllustration" class="noDisplayDay" src="assets/svg/heroIllustration.svg" />
-                <img id="heroIllustration" class="noDisplayNight" src="assets/svg/heroIllustrationDark.svg" />
+                <img id="heroIllustration" class="noDisplayDay" src="assets/svg/heroIllustration.svg" alt="illustration abstraite colorée pour habiller le site web"/>
+                <img id="heroIllustration" class="noDisplayNight" src="assets/svg/heroIllustrationDark.svg" alt="illustration abstraite colorée pour habiller le site web"/>
             </div>
         </section>
         <section id="About">
@@ -132,28 +132,43 @@
             </div>
         </section>
         <section id="workMenu">
-            <a onclick="showAll()" id="showAllButton" class="menubutton linkHoverEffect linkHoverEffectColor">
+            <a onclick="showAll()" id="showAllButton" class="linkHoverEffect LHEBlackCover">
                 Retour
             </a>
             <a href="#workMenu" onclick="toggleIllustrations()" id="illustrationButton"
-                class="menubutton linkHoverEffect linkHoverEffectColor">
+                class="linkHoverEffect LHEBlackCover">
                 Photographie
             </a>
             <a href="#workMenu" onclick="toggleLogos()" id="LogoButton"
-                class="menubutton linkHoverEffect linkHoverEffectColor">
+                class="linkHoverEffect LHEBlackCover">
                 Logos
             </a>
             <a href="#workMenu" onclick="toggleDesigns()" id="webDesignButton"
-                class="menubutton linkHoverEffect linkHoverEffectColor">
+                class="linkHoverEffect LHEBlackCover">
                 UX&nbsp;&&nbsp;UI
             </a>
             <a href="#workMenu" onclick="toggleDev()" id="devButton"
-                class="menubutton linkHoverEffect linkHoverEffectColor click">
+                class="linkHoverEffect LHEBlackCover click">
                 Developpement
             </a>
         </section>
         <section id="workGrid">
             <div class="container">
+                <div class="workItem logoItem">
+                    <div class="workImageHolder">
+                        <img src="assets/work-grid/logo-greenoco.png" class="workImage" alt="Visuel en noir & blanc d'un projet de marque de vêtement">
+                    </div>
+                    <div class="workDescription">
+                        <p>Logo & Visuels - Septembre 2023</p>
+                        <h4>Greenoco</h4>
+                        <div class="linkBox click">
+                            <a href="projet-greenoco.html">
+                                <span>Voir</span>
+                                <img src="assets/icons/northEastArrowIcon.svg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <div class="workItem logoItem">
                     <div class="workImageHolder">
                         <img src="assets/work-grid/logo-ever-east.jpg" class="workImage" alt="Visuel en noir & blanc d'un projet de marque de vêtement">
@@ -162,7 +177,7 @@
                         <p>Logo & Visuels - Aout 2023</p>
                         <h4>EVER EAST</h4>
                         <div class="linkBox click">
-                            <a href="projectevereast.html" target="_blank">
+                            <a href="projectevereast.html">
                                 <span>Voir</span>
                                 <img src="assets/icons/northEastArrowIcon.svg" />
                             </a>

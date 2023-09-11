@@ -47,3 +47,11 @@
 .darkTheme .linkHoverEffectColorCover:after {
   background-color: #B86ADF;
 }
+
+.LHEBlackCover:after {
+  z-index: -1;
+  background-color: #141313;
+  height: 30px;
+  bottom: -2px;
+  left: -20px;
+}
