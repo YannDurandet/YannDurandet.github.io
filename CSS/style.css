@@ -126,6 +126,7 @@ nav {
 }
 
 .navbarImage img {
+  margin-top: 3vh;
   width: 100%;
 }
 
@@ -166,6 +167,25 @@ nav {
   align-items: center;
   justify-content: center;
   background-color: #f0f0f0;
+  opacity: 0;
+  transform: translateX(200px);
+  animation: fadeInLeft 0.5s ease forwards;
+}
+
+.navbarSocial a:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.navbarSocial a:nth-child(2) {
+  animation-delay: 200ms;
+}
+
+.navbarSocial a:nth-child(3) {
+  animation-delay: 400ms;
+}
+
+.navbarSocial a:nth-child(4) {
+  animation-delay: 600ms;
 }
 
 .navbarSocial a i {
@@ -256,7 +276,7 @@ nav {
   margin-bottom: 20px;
 }
 
-.heroTitle span:first-child {
+.kenobi {
   font-weight: 400;
   font-style: italic;
   font-size: 24px;
@@ -269,6 +289,35 @@ nav {
 
 #heroIllustration {
   max-width: 33vw;
+}
+/* --- ANIMATION --- */
+
+.heroText span, .heroText h1, .heroText p {
+  opacity: 0;
+  transform: translateX(-200px);
+}
+
+.heroText span, .heroText h1, .heroText p {
+  animation: fadeInLeft 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.heroText h1 {
+  animation-delay: 0.4s;
+}
+
+.heroText p {
+  animation-delay: 0.8s;
 }
 
 /* =============== About =============== */

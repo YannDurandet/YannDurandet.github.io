@@ -8,111 +8,29 @@
     <title>Yann Durandet</title>
     <link rel="icon" href="assets/icons/website-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/photoPage.css">
-    <link rel="stylesheet" href="CSS/linkHoverEffect.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
 </head>
+
 <body>
-    <div class="navbar noDisplayPhone">
-        <nav>
-            <div class="navbarImage">
-                <img src="assets/website-logo/logoWhite.svg" />
-            </div>
-            <ul class="navbarLinks">
-                <li>
-                    <a href="index.html" class="linkHoverEffect linkHoverEffectColorCover">HOME</a>
-                </li>
-                <li>
-                    <a href="#" class="linkHoverEffect linkHoverEffectColorCover">HAUT DE PAGE</a>
-                </li>
-                <li>
-                    <a href="mailto:durandet.yann@gmail.com"
-                        class="linkHoverEffect linkHoverEffectColorCover">CONTACT</a>
-                </li>
-            </ul>
-            <div class="navbarSocial">
-                <a href="https://www.instagram.com/yann_visuals" target="_blank"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/yann-durandet-web-designer/" target="_blank"><i
-                        class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/YannDurandet" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a onclick="toggleContrast()"><i class="fa-regular fa-lightbulb"></i></a>
-            </div>
-            <div class="navbarFooter">
-                <p class="navbarFooterText">Copyright &copy; 2023 <br>Yann Durandet.</p>
-            </div>
-        </nav>
+    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <img src="assets/forzaAssets/AMG DRIFT.jpg" class="image" draggable="false">
+        <img src="assets/forzaAssets/AMG STOPLIGHT.jpg" class="image" draggable="false">
+        <img src="assets/forzaAssets/AMG SUN.jpg" class="image" draggable="false">
+        <img src="assets/forzaAssets/beetle.jpg" class="image" draggable="false">
+        <img src="assets/forzaAssets/JaguarFly.jpg" class="image" draggable="false">
+        <img src="assets/forzaAssets/MiniBest.jpg" class="image" draggable="false">
+        <img src="assets/forzaAssets/MiniBridgeSmoke.jpg" class="image" draggable="false">
+        <img src="assets/forzaAssets/skyline.jpg" class="image" draggable="false">
+        <img src="assets/forzaAssets/skylineBeach.jpg" class="image" draggable="false">
+        <img src="assets/forzaAssets/stoLeftSpeed.jpg" class="image" draggable="false">
+        <img src="assets/forzaAssets/stoPlate.jpg" class="image" draggable="false">
+        <img src="assets/forzaAssets/stoReflection.jpg" class="image" draggable="false">
     </div>
-    <div class="navbarSocialMobile">
-        <a href="index.html"><i class="fa-solid fa-angles-left"></i></a>
-        <a href="https://www.instagram.com/yann_visuals" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/yann-durandet-web-designer/" target="_blank"><i
-                class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://github.com/YannDurandet" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a onclick="toggleContrast()"><i class="fa-regular fa-lightbulb"></i></a>
-    </div>
-    <div class="photoContent">
-        <h1>Photographie Automobile</h1>
-        <h2>(Sur Forza Horizon 5)<span> - Attention, les images peuvent mettre du temps à charger</span></h2>
-        <p>J'adore la photographie, mais l'automobile encore plus.<br> C'est pourquoi je passe beaucoup (trop?) temps sur Forza Horizon 5
-            dans le mode photo<br>(c'est faux, je passes mon temps à rater mes virages
-            et finir dans le décor)<br>et que j'essaie de pousser ma créativité photographique sans les limites qui
-            pourraient m'être contraignantes à l'extérieur.
-        </p>
-        <div class="image-grid">
-            <div class="image-item">
-                <div class="image-content" style="background-image: url('assets/forzaAssets/AMG DRIFT.png');"></div>
-            </div>
-            <div class="image-item">
-                <div class="image-content" style="background-image: url('assets/forzaAssets/AMG SUN.png');"></div>
-            </div>
-            <div class="image-item">
-                <div class="image-content" style="background-image: url('assets/forzaAssets/AMG STOPLIGHT.png');"></div>
-            </div>
-            <div class="image-item">
-                <div class="image-content" style="background-image: url('assets/forzaAssets/stoLeftSpeed.png');"></div>
-            </div>
-            <div class="image-item">
-                <div class="image-content" style="background-image: url('assets/forzaAssets/stoPlate.png');"></div>
-            </div>
-            <div class="image-item">
-                <div class="image-content" style="background-image: url('assets/forzaAssets/stoReflection.png');"></div>
-            </div>
-            <div class="image-item">
-                <div class="image-content" style="background-image: url('assets/forzaAssets/MiniBest.png');"></div>
-            </div>
-            <div class="image-item">
-                <div class="image-content" style="background-image: url('assets/forzaAssets/MiniBridgeSmoke.png');"></div>
-            </div>
-            <div class="image-item">
-                <div class="image-content" style="background-image: url('assets/forzaAssets/JaguarFly.png');"></div>
-            </div>
-            <div class="image-item">
-                <div class="image-content" style="background-image: url('assets/forzaAssets/skyline.png');"></div>
-            </div>
-            <div class="image-item">
-                <div class="image-content" style="background-image: url('assets/forzaAssets/skylineBeach.png');"></div>
-            </div>
-            <div class="image-item">
-                <div class="image-content" style="background-image: url('assets/forzaAssets/beetle.png');"></div>
-            </div>
-        </div>
-        <div class="waveHolder">
-            <img src="assets/svg/wave.svg" />
-        </div>
-        <footer>
-            <a href="#" class="footerAnchor">
-                <img src="assets/website-logo/logoWhite.svg" class="footerLogoImg" alt="LOGO YD">
-            </a>
-            <div class="footerSocialList">
-                <a href="https://instagram.com/yann_visuals" target="_blank">Instagram</a>
-                <a href="https://github.com/YannDurandet" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank">LinkedIn</a>
-                <a href="cv.html">CV</a>
-            </div>
-            <div class="footerCopyright">
-                Copyright &copy; 2023 Yann Durandet.
-            </div>
-        </footer>
+    <div class="linkBox click">
+        <a href="index.html">
+            <span>Retourner à la page d'accueil</span>
+            <img src="assets/icons/northEastArrowIcon.svg" />
+        </a>
     </div>
 </body>
 <script src="https://kit.fontawesome.com/3c2baa7ea7.js"></script>
